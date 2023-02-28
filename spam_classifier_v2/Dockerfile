@@ -13,7 +13,7 @@ RUN --mount=type=cache,target=/root/.cache \
 
 COPY . .
 
-ENTRYPOINT [ "streamlit","run"]
+ENTRYPOINT [ "streamlit","run"] 
 
 CMD ["./App.py", "--server.address=0.0.0.0"]
 
